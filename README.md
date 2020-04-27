@@ -6,7 +6,7 @@ SGD increases the overall optimization efficiency at the expense of more iterati
 
 SGD’s oscillations introduced by random selection enables it to jump to new and potentially better local minima. On the other hand, the gradient direction oscillates, which may lead to the problem of non-converging - as SGD will keep overshooting. However, it has been shown that when we slowly decrease the learning rate, SGD shows the same convergence behaviour as batch gradient descent. Nevertheless, further optimization algorithms based on variance reduction were proposed to improve the convergence rate.
 
-https://www.youtube.com/embed/zoxTUDlesf0
+![ Stochastic Gradient Descent](sgd_animation.gif)
 
 
 # Requirements
