@@ -12,6 +12,8 @@ SGD’s oscillations introduced by random selection enables it to jump to new an
 
 ![Stochastic Gradient Descent](sgd_animation.gif)
 
+> SGD’s oscillations introduced by random selection enables it to jump to new and potentially better local minima.
+
 
 ## Requirements to run the code
 
