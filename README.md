@@ -1,5 +1,9 @@
 # Stochastic Gradient Descent (SGD)
 
+Stochastic gradient descent (SGD) in contrast to batch version performs a parameter update for each training example $x^{(i)}$ and label $y^{(i)}$:
+
+<img src="https://render.githubusercontent.com/render/math?math=\theta = \theta - \eta*\nabla L(y^i, f(x^i, \theta))">
+
 Since SGD uses only one sample per iteration, the computation complexity for each iteration is $O(D)$ where $D$ is the number of features. When the number of samples $N$ is large, the update rate for each iteration of SGD is much faster than that of batch gradient descent.
 
 SGD increases the overall optimization efficiency at the expense of more iterations, but the increased iteration number is insignificant compared with the high computation complexity caused by large numbers of samples. It is possible to use only thousands of samples overall to get the optimal solution even when the sample size is hundreds of thousands. Therefore, compared with batch methods, SGD can effectively reduce the computational complexity and accelerate convergence
