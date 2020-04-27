@@ -1,10 +1,13 @@
 import numpy as np
 from sklearn.utils import shuffle
 
-"""The following code calculate the cost based on hinge loss. Note the intercept term $b$ is missing, 
-since we'll add an extra column on $X$ with all 1s before splitting our dataset"""
+"""
+The following code calculate the cost based on hinge loss. Note the intercept term $b$ is missing, 
+since we'll add an extra column on $X$ with all 1s before splitting our dataset."""
 
 def compute_cost(W, X, Y, regularization_strength):
+    """we are trying to minimize the following loss using SGD:
+        \text{max}(1 - y_i*(\mathbf{w}^T\mathbf{x}_i + b), 0)"""
     N = X.shape[0]    
     distances = np.maximum(0, (1 - Y * (np.dot(X, W))))
     hinge_loss = regularization_strength * (np.sum(distances))
