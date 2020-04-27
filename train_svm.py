@@ -54,13 +54,13 @@ X_train = X_train.to_numpy()
 X_test = X_test.to_numpy()
 
 # train
-print("training started...")
+print("Training started...")
 W, lossHistory = sgd(X_train, y_train, learning_rate, regularization_strength, max_epochs)
-print("training finished.")
-print("weights are: {}".format(W))
+
+print("Training finished.")
 
 # testing
-print("testing the model...")
+print("Testing...")
 y_train_predicted = np.array([])
 for i in range(X_train.shape[0]):
     yp = np.sign(np.dot(X_train[i], W))
