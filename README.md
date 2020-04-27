@@ -19,10 +19,25 @@ SGD’s oscillations introduced by random selection enables it to jump to new an
 
 ```$ python train_svm.py --epochs=100 --alpha=0.000001 --regularization_strength=10000.0```
 
-## Results
+# Results
+
+## Console output
 
 ```
-Training started...                                                                                                     Epoch is: 1 and Cost is: 754407.8195154738                                                                              Epoch is: 2 and Cost is: 708819.7232919635                                                                              Epoch is: 4 and Cost is: 617653.7651782469                                                                              Epoch is: 8 and Cost is: 516230.94639430585                                                                             Epoch is: 16 and Cost is: 349757.12685772                                                                               Epoch is: 32 and Cost is: 188548.63399060527                                                                            Epoch is: 64 and Cost is: 135125.1178263414                                                                             Epoch is: 128 and Cost is: 125230.5426937045                                                                            Epoch is: 256 and Cost is: 123151.89976179479                                                                           Epoch is: 512 and Cost is: 122311.55988889028                                                                           Training finished.                                                                                                      Testing...                                                                                                              accuracy on test dataset: 0.95
+Training started...
+Epoch is: 1 and Cost is: 754407.8195154738
+Epoch is: 2 and Cost is: 708819.7232919635
+Epoch is: 4 and Cost is: 617653.7651782469
+Epoch is: 8 and Cost is: 516230.94639430585
+Epoch is: 16 and Cost is: 349757.12685772
+Epoch is: 32 and Cost is: 188548.63399060527
+Epoch is: 64 and Cost is: 135125.1178263414
+Epoch is: 128 and Cost is: 125230.5426937045
+Epoch is: 256 and Cost is: 123151.89976179479
+Epoch is: 512 and Cost is: 122311.55988889028
+Training finished.
+Testing...
+accuracy on test dataset: 0.95
 ```
 ## Decision boundaries
 
