@@ -1,4 +1,6 @@
-# Stochastic Gradient Descent (SGD)
+# Linear Support Vector Machine from scratch with the Hinge Loss and Stochastic Gradient Descent
+
+## Stochastic Gradient Descent (SGD)
 
 Stochastic gradient descent (SGD) in contrast to batch version performs a parameter update for each training example $x^{(i)}$ and label $y^{(i)}$:
 
